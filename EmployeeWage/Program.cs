@@ -7,9 +7,9 @@ namespace EmployeeWage
         static void Main(string[] args)
         {
             Console.WriteLine("-----  Employee Wage Problems  -----");
-            Console.WriteLine("Calculating Employee's Daily wage\n");
-            DailyWage dailyWage = new DailyWage();
-            dailyWage.Salary();
+            Console.WriteLine("Checking employee is working part-time or full-time\n");
+            Employement employement = new Employement();
+            employement.Wage();
         }
     }
 }
