@@ -7,9 +7,9 @@ namespace EmployeeWage
         static void Main(string[] args)
         {
             Console.WriteLine("-----  Employee Wage Problems  -----");
-            Console.WriteLine("Checking employee is working part-time or full-time\n");
-            Employement employement = new Employement();
-            employement.Wage();
+            Console.WriteLine("Checking employee is working part-time or full-time using Switch statement\n");
+            SwitchCase switchCase = new SwitchCase();
+            switchCase.Wage();
         }
     }
 }
