@@ -5,8 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("*****  Employee Wage Problems  *****\n");
-            Attendance attendance = new Attendance();
-            attendance.PreAbs();
+            DailyWage dailyWage = new DailyWage();
+            dailyWage.Salary();
         }
     }
 }
