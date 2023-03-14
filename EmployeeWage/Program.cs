@@ -5,8 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("*****  Employee Wage Problems  *****\n");
-            SwitchCase switchCase = new SwitchCase();
-            switchCase.Wage();
+            Monthlywage monthlywage = new Monthlywage();
+            monthlywage.Wage();
         }
     }
 }
