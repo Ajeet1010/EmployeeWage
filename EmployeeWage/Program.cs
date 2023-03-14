@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("*****  Employee Wage Problems  *****");
+            Console.WriteLine("*****  Employee Wage Problems  *****\n");
+            Attendance attendance = new Attendance();
+            attendance.PreAbs();
         }
     }
 }
