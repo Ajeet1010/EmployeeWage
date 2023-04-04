@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeWage
 {
-    // UC6: Calculating monthly wage of employee until it reaches condition for total 100 hrs or 20 days.
+    // UC7: Calculating monthly for refactor method code.
     internal class RefactorMethod
     {
         int HOURWAGE = 20;
