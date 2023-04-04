@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 
 namespace EmployeeWage
 {
-    // UC5: Calculating monthly wage of employee.
-    internal class Monthlywage
+    // UC6: Calculating monthly wage of employee until it reaches condition for total 100 hrs or 20 days.
+    internal class ConditionHrs
     {
-        int HOURWAGE = 20, EMPHRS = 0;
-        const int IS_FULL_TIME = 0, IS_PART_TIME = 1, WORKING_DAYS = 20;
+        int HOURWAGE = 20;
+        const int IS_FULL_TIME = 0, IS_PART_TIME = 1, WORKING_DAYS = 20, MAX_HRS = 100;
 
         public void Wage()
         {
 
-            int totalEmphrs = 0, day = 1, empWage, totalEmpWage = 0;
-            Random random = new Random();
-            for (day = 1; day <= WORKING_DAYS; day++)
+            int totalEmphrs = 0, empWage, totalEmpWage = 0, totaldays =20, EMPHRS;
+            while(totaldays <= 20 || totalEmphrs < MAX_HRS)
             {
+                Random random = new Random();
                 int empAttendance = random.Next(0, 3);
+                totaldays++;
                 switch (empAttendance)
                 {
                     case IS_FULL_TIME:
@@ -35,13 +36,12 @@ namespace EmployeeWage
                         Console.WriteLine("\nEmployee is Absent");
                         break;
                 }
-                empWage = EMPHRS * HOURWAGE;
-                totalEmpWage = totalEmpWage + empWage;
+
                 totalEmphrs = totalEmphrs + EMPHRS;
-                Console.WriteLine("Employee Wage for day {0} is {1}", day, empWage);
-            }
-            Console.WriteLine("\nEmployee total working hours for {0} days is {1} ", (day-1), totalEmphrs);
-            Console.WriteLine("\nMonthly Wage for Employee for {0} days is {1} ", (day - 1), totalEmpWage);
+                totalEmpWage = totalEmphrs * HOURWAGE;
+                Console.WriteLine("Employee total working hours is: {0} and wage is {1} for days {2}", totalEmphrs, totalEmpWage, totaldays);
+            }            
+            
         }
     }
 }

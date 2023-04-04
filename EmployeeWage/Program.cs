@@ -5,8 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("*****  Employee Wage Problems  *****\n");
-            Monthlywage monthlywage = new Monthlywage();
-            monthlywage.Wage();
+            ConditionHrs conditionHrs = new ConditionHrs();
+            conditionHrs.Wage();
         }
     }
 }
