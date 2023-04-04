@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("*****  Employee Wage Problems  *****\n");
-            ConditionHrs conditionHrs = new ConditionHrs();
+            RefactorMethod conditionHrs = new RefactorMethod();
             conditionHrs.Wage();
         }
     }
